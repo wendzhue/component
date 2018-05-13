@@ -11,7 +11,7 @@
     "dev": "npm run storybook",
     "build:demo": "npm run build-storybook",
     "build-storybook": "build-storybook -c .storybook -o docs"
-    {{#else}}
+    {{else}}
     "dev": "webpack-dev-server --hot --inline --config build/webpack.config.dev.js --mode development",
     "build:demo": "webpack --config build/webpack.config.prod.js --mode production",
     {{/storybook}}
