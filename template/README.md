@@ -25,8 +25,9 @@ npm run build:demo
 {{/if}}
 ```
 
-For detailed explanation on how things work, consult the docs for [vue-loader](http://vuejs.github.io/vue-loader).
-
+{{#if storybook}}
+At the first time you run `npm run dev`, `wendzhue/component` would install `Storybook` for you.
+{{/if}}
 ---
 
 This project is build with vue-cli boilplate [wendzhue/component](https://github.com/wendzhue/component).
