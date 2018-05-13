@@ -1,6 +1,6 @@
 # component
 
-> A simple Vue 2.0 Webpack & `vue-loader` setup for building single components. However, if you are going to build a really big component kit, you would definetly want a much more sophisticated project structure. For that, I recommend you to learn from [ant design](https://github.com/ant-design/ant-design).
+> A simple Vue 2.0 Webpack & `vue-loader` setup for building components. However, if you are going to build a really big component kit, you would definetly want a much more sophisticated project structure. For that, I recommend you to learn from [ant design](https://github.com/ant-design/ant-design).
 
 > This template is only Vue 2.0 compatible.
 

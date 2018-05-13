@@ -11,7 +11,7 @@
     "storybook": "storybook",
     "dev": "npm run storybook",
     "build:demo": "npm run build-storybook",
-    "build-storybook": "build-storybook -c .storybook -o docs"
+    "build-storybook": "build-storybook -c .storybook -o docs",
     {{else}}
     "dev": "webpack-dev-server --hot --inline --config build/webpack.config.dev.js --mode development",
     "build:demo": "webpack --config build/webpack.config.prod.js --mode production",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     {{#if storybook}}
+    "storybook": "^1.0.0",
     "@storybook/addon-actions": "^3.4.3",
     "@storybook/addon-links": "^3.4.3",
     "@storybook/vue": "^3.4.3",

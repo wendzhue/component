@@ -5,7 +5,7 @@ const webpack = require('webpack')
 const merge = require('webpack-merge')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const base = require('./webpack.base.config')
+const base = require('./webpack.config.base')
 
 module.exports = merge(base, {
   entry: {
