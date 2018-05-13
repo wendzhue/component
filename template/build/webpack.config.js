@@ -11,7 +11,7 @@ module.exports = merge(base, {
   },
   output: {
     path: path.join(__dirname, '../lib'),
-    filename: '[name].min.js'
+    filename: '{{ name }}.min.js'
   },
   externals: {
     vue: {

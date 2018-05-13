@@ -32,5 +32,5 @@ module.exports = {
     'build/webpack.config.prod.js': '!storybook'
   },
   completeMessage:
-    '{{#inPlace}}To get started:\n\n  npm install\n  npm run dev{{else}}To get started:\n\n  cd {{desDirName}}\n  npm install\n  npm run dev{{/inPlace}}'
+    '{{#inPlace}}To get started:\n\n  npm install\n  npm run dev{{else}}To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev{{/inPlace}}'
 }

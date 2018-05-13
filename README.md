@@ -1,6 +1,6 @@
 # component
 
-> A simple Vue 2.0 Webpack & `vue-loader` setup for building single components.
+> A simple Vue 2.0 Webpack & `vue-loader` setup for building single components. However, if you are going to build a really big component kit, you would definetly want a much more sophisticated project structure. For that, I recommend you to learn from [ant design](https://github.com/ant-design/ant-design).
 
 > This template is only Vue 2.0 compatible.
 
@@ -10,7 +10,7 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ```bash
 $ npm install -g vue-cli
-$ vue init webpack-simple my-project
+$ vue init wendzhue/component my-project
 $ cd my-project
 $ npm install
 $ npm run dev
@@ -18,16 +18,17 @@ $ npm run dev
 
 ## What's Included
 
-* `npm run dev`: Webpack + `vue-loader` with proper config for source maps & hot-reload.
+* `npm run dev`: Dev your component in your demo with hot-reload and friendly loader configs.
+* `npm run storybook`: If you prefer to develope component with Storybook, it's configurable!
+* `npm run build:demo`: Of course you should provide a demo to other developers. Run this command and `wendzhue/component` would build your demo in `docs` dir. Remember to use GitHub Pages wisely!
+* `npm run build`: Build your component. The output file would be `lib/{{ name }}.min.js`. Other developers can use your component from here.
 
-* `npm run build`: build with HTML/CSS/JS minification.
+For detailed explanation on how things work, check the wiki.
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader). Also check out the [breaking changes in vue-loader@9.0.0](https://github.com/vuejs/vue-loader/releases/tag/v9.0.0).
+## License
 
-## Fork It And Make Your Own
+MIT.
 
-You can fork this repo to create your own boilerplate, and use it with `vue-cli`:
+---
 
-```bash
-vue init username/repo my-project
-```
+Wendell Hu, 2018.

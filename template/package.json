@@ -5,6 +5,7 @@
   "author": "{{ author }}",
   "license": "{{ license }}",
   "private": false,
+  "main": "lib/{{ name }}.min.js",
   "scripts": {
     {{#if storybook}}
     "storybook": "storybook",
@@ -15,7 +16,7 @@
     "dev": "webpack-dev-server --hot --inline --config build/webpack.config.dev.js --mode development",
     "build:demo": "webpack --config build/webpack.config.prod.js --mode production",
     {{/if}}
-    "build": "webpack --config build/webpack.config.js --mode production",
+    "build": "webpack --config build/webpack.config.js --mode production"
   },
   "peerDependencies": {
     "vue": "^2.5.16"
