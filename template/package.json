@@ -6,7 +6,7 @@
   "license": "{{ license }}",
   "private": false,
   "scripts": {
-    {{#storybook}}
+    {{#if storybook}}
     "storybook": "storybook",
     "dev": "npm run storybook",
     "build:demo": "npm run build-storybook",
@@ -14,18 +14,18 @@
     {{else}}
     "dev": "webpack-dev-server --hot --inline --config build/webpack.config.dev.js --mode development",
     "build:demo": "webpack --config build/webpack.config.prod.js --mode production",
-    {{/storybook}}
+    {{/if}}
     "build": "webpack --config build/webpack.config.js --mode production",
   },
   "peerDependencies": {
     "vue": "^2.5.16"
   },
   "devDependencies": {
-    {{#storybook}}
+    {{#if storybook}}
     "@storybook/addon-actions": "^3.4.3",
     "@storybook/addon-links": "^3.4.3",
     "@storybook/vue": "^3.4.3",
-    {{/storybook}}
+    {{/if}}
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-es2015": "^6.24.1",

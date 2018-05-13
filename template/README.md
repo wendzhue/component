@@ -14,8 +14,6 @@ npm run dev
 # dev with storybook at localhost:4200, if you use Storybook
 npm run dev || npm run storybook
 
-
-
 ```
 
 For detailed explanation on how things work, consult the docs for [vue-loader](http://vuejs.github.io/vue-loader).
