@@ -6,7 +6,7 @@ import Vue from 'vue'
 // import css files
 
 // load all .stories.js files in packages
-const storyFiles = require.context('../packages', true, /\.stories\.js$/)
+const storyFiles = require.context('../src', true, /\.stories\.js$/)
 
 function loadStories() {
   storyFiles.keys().forEach(filename => storyFiles(filename))
