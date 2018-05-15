@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1>Hello!</h1>
-    <p>Your have started your demo. Now develop your component!</p>
+    <p>You have successfully setup the project. Now get started to develop your components!</p>
   </div>
 </template>
 

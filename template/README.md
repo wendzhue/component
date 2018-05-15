@@ -9,7 +9,7 @@
 npm install
 
 {{#if storybook}}
-# dev with storybook at localhost:6006
+# dev with storybook with hot reload at localhost:6006
 {{else}}
 # serve your demo with hot reload at localhost:8080
 {{/if}}
@@ -22,11 +22,13 @@ npm run dev
 {{/if}}
 npm run build:demo
 
+# build your component and get it ready for publishment
+npm run build
+
+# publish your component
+npm publish
 ```
 
-{{#if storybook}}
-At the first time you run `npm run dev`, `wendzhue/component` would install `Storybook` for you.
-{{/if}}
 ---
 
-This project is build with vue-cli boilplate [wendzhue/component](https://github.com/wendzhue/component).
+This project is build with vue-cli boilerplate [wendzhue/component](https://github.com/wendzhue/component).
