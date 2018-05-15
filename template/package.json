@@ -11,7 +11,7 @@
     "dev": "npm run storybook",
     "build:demo": "npm run build-storybook",
     "build-storybook": "build-storybook -c .storybook -o docs",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "storybook",
     {{else}}
     "dev": "webpack-dev-server --hot --inline --config build/webpack.config.dev.js --mode development",
     "build:demo": "webpack --config build/webpack.config.prod.js --mode production",
@@ -22,11 +22,6 @@
     "vue": "^2.5.16"
   },
   "devDependencies": {
-    {{#if storybook}}
-    "@storybook/addon-actions": "^3.4.3",
-    "@storybook/addon-links": "^3.4.3",
-    "@storybook/vue": "^3.4.3",
-    {{/if}}
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-es2015": "^6.24.1",
