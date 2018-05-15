@@ -9,20 +9,19 @@
 npm install
 
 {{#if storybook}}
-# dev with storybook at localhost:4200
-npm run dev || npm run storybook
+# dev with storybook at localhost:6006
 {{else}}
 # serve your demo with hot reload at localhost:8080
-npm run dev
 {{/if}}
+npm run dev
 
 {{#if storybook}}
 # build storybook to serve on GitHub Pages
-npm run build:demo || npm run build-storybook
 {{else}}
 # build your demo to serve on GitHub Pages
-npm run build:demo
 {{/if}}
+npm run build:demo
+
 ```
 
 {{#if storybook}}

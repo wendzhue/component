@@ -8,10 +8,10 @@
   "main": "lib/{{ name }}.min.js",
   "scripts": {
     {{#if storybook}}
-    "storybook": "storybook -f",
     "dev": "npm run storybook",
     "build:demo": "npm run build-storybook",
     "build-storybook": "build-storybook -c .storybook -o docs",
+    "storybook": "start-storybook -p 6006",
     {{else}}
     "dev": "webpack-dev-server --hot --inline --config build/webpack.config.dev.js --mode development",
     "build:demo": "webpack --config build/webpack.config.prod.js --mode production",
@@ -23,7 +23,9 @@
   },
   "devDependencies": {
     {{#if storybook}}
-    "storybook": "^1.0.0",
+    "@storybook/addon-actions": "^3.4.3",
+    "@storybook/addon-links": "^3.4.3",
+    "@storybook/vue": "^3.4.3",
     {{/if}}
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
@@ -35,6 +37,9 @@
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
     "serve": "^6.5.6",
+    {{#if storybook}}
+    "storybook": "^1.0.0",
+    {{/if}}
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
     "vue-loader": "14.2.2",
